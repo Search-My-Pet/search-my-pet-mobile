@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "ask-my-pet",
-    "slug": "ask-my-pet",
+    "name": "search-my-pet",
+    "slug": "search-my-pet",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -25,7 +25,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "com.central.pet.askmypet"
+      "package": "click.searchmypet.app"
     },
     "web": {
       "favicon": "./assets/favicon.png"
