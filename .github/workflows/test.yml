@@ -1,5 +1,5 @@
 on:
-  commit:
+  push:
     branches:
       - feature/configure-build-settings
 jobs:
