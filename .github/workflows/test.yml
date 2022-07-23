@@ -19,4 +19,4 @@ jobs:
         run: yarn install
 
       - name: 🚀 Build app
-        run: cross-env APP_ENV=development cat .env.development
+        run: npx cross-env APP_ENV=development cat .env.development
