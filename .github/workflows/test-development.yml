@@ -1,0 +1,17 @@
+on:
+  push:
+    branches:
+      - feature/configure-build-settings
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🏗 Setup repo
+        uses: actions/checkout@v2
+
+      - name: "Create env file"
+        run: |
+          touch .env
+          echo ENVIRONMENT=${{ secrets.PRODUCTION_ENVIRONMENT }} >> .env
+          echo API_BASE_URL=${{ secrets.PRODUCTION_API_BASE_URL }} >> .env
+          cat .env
